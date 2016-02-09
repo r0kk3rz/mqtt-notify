@@ -1,0 +1,10 @@
+[Unit]
+Description=MQTT Notification Service
+After=pre-user-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/nemo/mqtt-notify/mqtt-notify.py
+
+[Install]
+WantedBy=user-session.target
