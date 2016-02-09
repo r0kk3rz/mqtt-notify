@@ -12,7 +12,7 @@ def read_credentials_file(filename):
     return f.readline().strip(), f.readline().strip()
 
 mqtt_name = "sailfish_iot_"+''.join(random.choice(string.ascii_lowercase + string.digits) for i in xrange(8))
-mqtt_server = "40.122.55.120"
+mqtt_server = "yourserver.com"
 mqtt_port = 1883
 mqtt_keepalive = 210
 # Note: getting the will wrong will make your connection fail authentication!
